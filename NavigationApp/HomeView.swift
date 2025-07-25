@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  NavigationApp
 //
-//  Created by Scholar on 7/24/25.
+//  Created by Khushi Jain on 7/24/25.
 //
 
 import SwiftUI
@@ -16,7 +16,6 @@ struct HomeView: View {
                     Text("Back to menu")
                 }
             }
-            
         }
     }
 }
