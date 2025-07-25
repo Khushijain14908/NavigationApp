@@ -9,13 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack{
+                Text("~~ MENU ~~")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                NavigationLink(destination: HomeView()) {
+                    Text("Home")
+                }
+                NavigationLink(destination: AboutView()) {
+                    Text("About Me")
+                }
+                NavigationLink(destination: ContactView()) {
+                    Text("Contact")
+                }
+                NavigationLink(destination: HelpView()) {
+                    Text("Help")
+                }
+            }
+        .navigationTitle("Menu")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
         }
-        .padding()
     }
 }
 
