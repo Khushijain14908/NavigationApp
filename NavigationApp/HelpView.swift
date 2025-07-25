@@ -9,7 +9,15 @@ import SwiftUI
 
 struct HelpView: View {
     var body: some View {
-        Text("This is the help page.")
+        NavigationStack{
+            VStack {
+                Text("This is the help page.")
+                NavigationLink(destination: ContentView()) {
+                    Text("Back to menu")
+                }
+            }
+            
+        }
     }
 }
 

@@ -9,7 +9,15 @@ import SwiftUI
 
 struct AboutView: View {
     var body: some View {
-        Text("This is the about me screen.")
+        NavigationStack{
+            VStack {
+                Text("This is the about me screen.")
+                NavigationLink(destination: ContentView()) {
+                    Text("Back to menu")
+                }
+            }
+            
+        }
     }
 }
 

@@ -27,6 +27,7 @@ struct ContentView: View {
                     Text("Help")
                 }
             }
+        //don't put the following three lines in all pages. this was what was causing the home button to disappear. 
         .navigationTitle("Menu")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarHidden(true)

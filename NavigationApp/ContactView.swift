@@ -9,7 +9,15 @@ import SwiftUI
 
 struct ContactView: View {
     var body: some View {
-        Text("This is the contact view.")
+        NavigationStack{
+            VStack {
+                Text("This is the contact view.")
+                NavigationLink(destination: ContentView()) {
+                    Text("Back to menu")
+                }
+            }
+            
+        }
     }
 }
 
